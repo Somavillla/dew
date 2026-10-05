@@ -10,11 +10,20 @@
 </head>
 
 <body class="page-category-acessories">
+    <div style="text-align: left;">
+        <a href="./products.html"><button>Voltar</button></a>
+    </div>
+
     <h1>Categoria de produtos</h1>
     <h2>Acessórios para TVs</h2>
     <ul>
         <li>
-            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_737250-MLA108560369434_032026-F.webp" alt="Suporte Articulado F410" width="250" />
+            <picture>
+                <source srcset="https://m.magazineluiza.com.br/a-static/420x420/suporte-articulado-de-parede-17-34-elg-f410/aquiquetemm/99397p/fd13ba9ecb29f39a04ec5e0a16da4a46.jpeg" media="(max-width: 767px)" type="image/jpeg" />
+                <source srcset="https://m.magazineluiza.com.br/a-static/420x420/suporte-articulado-de-parede-17-34-elg-f410/aquiquetemm/99397p/fd13ba9ecb29f39a04ec5e0a16da4a46.jpeg" media="(max-width: 1339px)" type="image/jpeg" />
+                <source srcset="https://m.magazineluiza.com.br/a-static/420x420/suporte-articulado-de-parede-17-34-elg-f410/aquiquetemm/99397p/fd13ba9ecb29f39a04ec5e0a16da4a46.jpeg" type="image/jpeg" />
+                <img src="https://m.magazineluiza.com.br/a-static/420x420/suporte-articulado-de-parede-17-34-elg-f410/aquiquetemm/99397p/fd13ba9ecb29f39a04ec5e0a16da4a46.jpeg" alt="Suporte Articulado Parede Monitor TV" width="250" />
+            </picture>
             
             <h3>
                 <a href="https://www.mercadolivre.com.br/suporte-articulado-parede-monitor-tv-17-a-35-pistao-f410-elg/p/MLB19606395" target="_blank" rel="noopener noreferrer">
@@ -26,7 +35,12 @@
             <h5>ou 3x de R$73,66</h5>
         </li>
         <li>
-            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_874272-MLB91943522214_092025-F-suporte-para-tv-articulado-32-a-70.webp" alt="Imagem de suporte para televisão marca LG" width="250" />
+            <picture>
+                <source srcset="https://http2.mlstatic.com/D_NQ_NP_2X_874272-MLB91943522214_092025-F-suporte-para-tv-articulado-32-a-70.webp" media="(max-width: 767px)" type="image/webp" />
+                <source srcset="https://http2.mlstatic.com/D_NQ_NP_2X_874272-MLB91943522214_092025-F-suporte-para-tv-articulado-32-a-70.webp" media="(max-width: 1339px)" type="image/webp" />
+                <source srcset="https://http2.mlstatic.com/D_NQ_NP_2X_874272-MLB91943522214_092025-F-suporte-para-tv-articulado-32-a-70.webp" type="image/webp" />
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_874272-MLB91943522214_092025-F-suporte-para-tv-articulado-32-a-70.webp" alt="Imagem de suporte para televisão marca LG" width="250" />
+            </picture>
             
             <h3>
                 <a href="https://www.mercadolivre.com.br/suporte-para-tv-articulado-32-a-70/up/MLBU1462047601" target="_blank" rel="noopener noreferrer">
@@ -38,5 +52,37 @@
             <h5>ou 3x de R$83,29</h5>
         </li>
     </ul>
+
+    <form id="tv-request-form">
+        <fieldset>
+            <legend>Solicitação de Acessório de TV conforme seu modelo</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: Rafael Somavilla" autocomplete="name" required />
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Ex: rafael@email.com" autocomplete="email" required />
+            
+            <label for="modelo">Acessório desejado:</label>
+            <input list="modelos-tv" id="modelo" name="modelo" placeholder="Escolha ou digite um modelo" required />
+            <datalist id="modelos-tv">
+                <option value="1">Suporte Articulado com Pistão 17 a 35 polegadas</option>
+                <option value="2">Suporte TV Articulado 32 a 70 polegadas</option>
+            </datalist>
+            
+            <button type="reset">Limpar formulário</button>
+            <button type="submit">Enviar solicitação</button>
+        </fieldset>
+    </form>
+
+    <h2>Perguntas mais frequentes</h2>
+    <details>
+        <summary>Como solicitar um modelo?</summary>
+        <p>
+            Para solicitar um modelo de televisão que não está disponível no site, preencha o formulário acima.
+        </p>
+    </details>
+
+    <br>
+    <p><small>Todos os direitos reservados</small></p>
 </body>
 </html>
